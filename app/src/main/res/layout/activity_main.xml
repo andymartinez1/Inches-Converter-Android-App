@@ -2,27 +2,34 @@
 <LinearLayout android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:id="@+id/main"
+    android:gravity="center"
     xmlns:android="http://schemas.android.com/apk/res/android">
-    
+
     <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="186dp"
+        android:layout_height="131dp"
         android:src="@drawable/inches" />
     
     <EditText
+        android:layout_margin="12dp"
         android:id="@+id/edit_text_inches"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:hint="Inches"/>
 
     <Button
+        android:layout_margin="12dp"
         android:id="@+id/button_calculate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Calculate"/>
+        android:text="Calculate" />
 
     <TextView
+        android:layout_margin="12dp"
         android:id="@+id/text_view_result"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:text="Your height is 1.5m"/>
 
 </LinearLayout>
